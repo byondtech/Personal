@@ -10,5 +10,16 @@
       "react/prop-types": "warn",
       "react/react-in-jsx-scope": "off",
       "react/no-unescaped-entities": "off"
-    }
+    },
+    "overrides": [
+      {
+        "files": ["next.config.js"],
+        "env": {
+          "node": true
+        },
+        "rules": {
+          "no-undef": "off"
+        }
+      }
+    ]
   }
