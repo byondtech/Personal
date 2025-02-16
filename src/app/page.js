@@ -10,12 +10,14 @@ import ContactCard from './components/ContentCard';
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-inter'
 })
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '500'],
   display: 'swap',
+  variable: '--font-playfair'
 })
 
 const socialLinks = [
@@ -28,7 +30,7 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <main className={`min-h-screen relative ${inter.className}`}>
+    <main className={`min-h-screen relative ${inter.variable} ${playfair.variable}`}>
       {/* Background color */}
       <div className="absolute inset-0 bg-white dark:bg-black -z-10" />
       
